@@ -1,0 +1,51 @@
+div.fragment {
+        padding: 4px 6px;
+}
+
+#projectname {
+	font-size: 150%;
+}
+
+#projectlogo {
+	vertical-align: middle;
+}
+
+iframe#MSearchResults {
+	max-width: 95vw;
+}
+
+@media screen and (max-width: 790px) {
+	#top:before {
+		content: '';
+		position: absolute;
+		top: 7px;
+		left: 157px;
+		margin: 0 auto;
+		display: block;
+		width: 25px;
+		height: 0;
+		box-shadow: -0.5px 11.5px 0px 1.5px #8B00C5, -0.5px 21.5px 0px 1.5px #8B00C5, -0.5px 31.5px 0px 1.5px #8B00C5;
+	}
+	
+	#side-nav {
+		display: none;
+	}
+	
+	#top:hover ~ #side-nav, #side-nav:hover {
+		display: block;
+	}
+	
+	#doc-content {
+		margin-left: 0 !important;
+	}
+
+	#doc-content:hover {
+		z-index: 1;
+	    background: #fff;
+	}
+	
+	#doc-content:hover #MSearchResultsWindow {
+		visibility: hidden;
+		transition: visibility linear 0.1s 0.1s;
+	}
+}
