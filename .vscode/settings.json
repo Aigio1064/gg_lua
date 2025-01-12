@@ -1,5 +1,9 @@
 {
     "Lua.diagnostics.globals": [
         "gg"
+    ],
+    "Lua.diagnostics.disable": [
+        "duplicate-set-field",
+        "lowercase-global"
     ]
 }
